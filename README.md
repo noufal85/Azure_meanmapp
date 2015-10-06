@@ -5,14 +5,14 @@ Basic application demonstrating MEAN (Mongo, Express, Angular, and Node) Integra
 
 ## Demo Link
 
-http://ec2-52-3-241-230.compute-1.amazonaws.com:3000/#/join
+https://mean-google-maps.herokuapp.com
  
 ## Instructions to run locally 
 
 1) Clone repository and download npm packages 
 
 ```
-git clone https://github.com/afhaque/MeanMapAppV2.0.git
+git clone git@github.com:scotch-io/mean-google-maps
 npm install
 ```
 
