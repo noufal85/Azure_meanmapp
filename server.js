@@ -12,7 +12,17 @@ var app             = express();
 // Express Configuration
 // -----------------------------------------------------
 // Sets the connection to MongoDB
-mongoose.connect(database.mongolab.url);
+
+mongoose.connect('mongodb://noufal85mongodbapp.documents.azure.com:10255/<meanmapapp>?ssl=true', {
+    auth: {
+      user: 'noufal85mongodbapp',
+      password: 'MBiHvEYvJq6IU1ZUHI1oAxOcQiXglsA9dfjeFZbWGYOrbAg9iKvRdWo1TQN8MUxEILSGliCNUSguWvLP9SaqtQ=='
+    }
+  })
+  .then(() => console.log('connection successful'))
+  .catch((err) => console.error(err));
+//mongoose.connect(process.env.COSMOSDB_CONNSTR+process.env.COSMOSDB_DBNAME+"?ssl=true&replicaSet=globaldb");
+//mongoose.connect(database.local.url);
 
 // Logging and Parsing
 app.use(express.static(__dirname + '/public'));                 // sets the static files location to public

@@ -1,5 +1,6 @@
 // Pulls Mongoose dependency for creating schemas
 var mongoose    = require('mongoose');
+//mongoose.connect('mongodb://localhost/MeanMapApp');
 var Schema      = mongoose.Schema;
 
 // Creates a User Schema. This will be the basis of how user data is stored in the db
